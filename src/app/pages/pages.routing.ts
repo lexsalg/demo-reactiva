@@ -3,6 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { InicioPage } from './inicio';
 import { Pages } from './pages';
+import { Formulario } from './formulario/formulario';
+import { Requisitos } from './requisitos/requisitos';
+import { Condiciones } from './condiciones/condiciones';
 
 const routes: Routes = [
   {
@@ -10,7 +13,9 @@ const routes: Routes = [
     component: Pages,
     children: [
       { path: '', component: InicioPage },
-      { path: '', component: InicioPage },
+      { path: 'solicitar', component: Formulario },
+      { path: 'condiciones', component: Condiciones },
+      { path: 'requisitos', component: Requisitos },
     ],
   },
 ];

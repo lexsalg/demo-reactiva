@@ -1,14 +1,25 @@
 <mat-toolbar color="primary" class="mat-elevation-z10">
-  <img src="assets/logo.png" alt="">
-  <p class="fw-400">caja cusco</p>
+  <img src="assets/logo.png" alt="" class="mr-15i">
+
+  <h5 class="mr-15i">Reactiva Perú</h5>
+
+  <a mat-button class="mr-15i" [routerLink]="['/']">¿Qué es?</a>
+  <a mat-button class="mr-15i" [routerLink]="['/condiciones']">Condiciones</a>
+  <a mat-button class="mr-15i" [routerLink]="['/requisitos']">Requisitos</a>
+  <a mat-raised-button class="mr-15i" [routerLink]="['/solicitar']">
+    <span class="cl-danger"> Solicitar </span>
+  </a>
+
+
+
 </mat-toolbar>
 
-<div>
-  <router-outlet></router-outlet>
+<div class="container">
+  <router-outlet class="container2"> </router-outlet>
 </div>
 
 <mat-toolbar color="primary" class="footer">
-  <p class="uno">
+  <p class="uno line">
     "La empresa tiene la obligación de difundir información de conformidad con
     la Ley Nº 28587 y el Reglamento de Gestión de Conducta de Mercado del
     Sistema Financiero, aprobado con Resolución SBS N° 3274-2017."
